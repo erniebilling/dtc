@@ -2,5 +2,7 @@ export DOCKER_COMMON="--rm -u $UID -v $HOME:$HOME -e HOME=$HOME -e USERNAME=$USE
 alias pcf='docker run $DOCKER_COMMON -w $PWD -t viniciusffj/docker-cf-cli /bin/bash'
 alias java8='docker run $DOCKER_COMMON -w $PWD -t openjdk:8 /bin/bash'
 alias gradle='docker run $DOCKER_COMMON -w $PWD -t gradle:jdk8-alpine gradle'
+alias mvn='docker run $DOCKER_COMMON -w $PWD -t maven mvn'
 alias golang='docker run $DOCKER_COMMON -w $PWD -t golang /bin/bash'
-
+alias python3='docker run $DOCKER_COMMON -w $PWD -t python:3 /bin/bash'
+alias python2='docker run $DOCKER_COMMON -w $PWD -t python:2 /bin/bash'
